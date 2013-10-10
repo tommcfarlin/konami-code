@@ -22,21 +22,16 @@
 			$( window ).keyup(function( evt ) {
 
 				code = evt.keyCode ? evt.keyCode : evt.which;
-				if ( 10 > controllerCode.push( code ) )
-				{
+				if ( 10 > controllerCode.push( code ) ) {
 					return;
-				}
+				} // end if
 				
 				if ( 10 < controllerCode.length ) {
 					controllerCode.shift();
 				} // end if
 				
-				for( i = 0, l = masterKey.length; i < l; i++ ) {
-				
-					if( masterKey[i] !== controllerCode[i] ) {
-						return;
-					} // end if
-					
+				if ( masterKey.toString() !== controllerCode.toString() ) {
+					return;
 				} // end for
 				
 				opts.cheat();
