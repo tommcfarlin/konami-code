@@ -7,12 +7,12 @@
  * Released under the MIT License
  */
 
-(function( $ ) {
+(function ( $ ) {
 	"use strict";
 	
 	$.fn.konami = function( options ) {
 		
-		var opts, masterKey, controllerCode, code, bIsValid, i, l;
+		var opts, masterKey, controllerCode, code;
 
 		var opts = $.extend({}, $.fn.konami.defaults, options);
 		return this.each(function() {
@@ -21,26 +21,21 @@
 			controllerCode = [];
 			$( window ).keyup(function( evt ) {
 
-				code = evt.keyCode ? evt.keyCode : evt.which;
-				controllerCode.push( code );
-				if( 10 === controllerCode.length ) {
-					
-					bIsValid = true;
-					for( i = 0, l = masterKey.length; i < l; i++ ) {
-					
-						if( masterKey[i] !== controllerCode[i] ) {
-							bIsValid = false;
-						} // end if
-						
-					} // end for
-					
-					if( bIsValid ) {
-						opts.cheat();
-					} // end if
-					
-					controllerCode = [];
+				code = evt.keyCode || evt.which;
 
+				if ( 10 > controllerCode.push( code ) ) {
+					return;
 				} // end if
+				
+				if ( 10 < controllerCode.length ) {
+					controllerCode.shift();
+				} // end if
+				
+				if ( masterKey.toString() !== controllerCode.toString() ) {
+					return;
+				} // end for
+				
+				opts.cheat();
 				
 			}); // keyup
 			
