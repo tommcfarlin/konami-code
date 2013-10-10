@@ -23,6 +23,11 @@
 
 				code = evt.keyCode ? evt.keyCode : evt.which;
 				controllerCode.push( code );
+				
+				if ( 10 < controllerCode.length ) {
+					controllerCode.shift();
+				} // end if
+				
 				if( 10 === controllerCode.length ) {
 					
 					bIsValid = true;
@@ -37,8 +42,6 @@
 					if( bIsValid ) {
 						opts.cheat();
 					} // end if
-					
-					controllerCode = [];
 
 				} // end if
 				
