@@ -7,12 +7,12 @@
  * Released under the MIT License
  */
 
-(function( $ ) {
+(function ( $ ) {
 	"use strict";
 	
 	$.fn.konami = function( options ) {
 		
-		var opts, masterKey, controllerCode, code, bIsValid, i, l;
+		var opts, masterKey, controllerCode, code;
 
 		var opts = $.extend({}, $.fn.konami.defaults, options);
 		return this.each(function() {
@@ -21,7 +21,8 @@
 			controllerCode = [];
 			$( window ).keyup(function( evt ) {
 
-				code = evt.keyCode ? evt.keyCode : evt.which;
+				code = evt.keyCode || evt.which;
+
 				if ( 10 > controllerCode.push( code ) ) {
 					return;
 				} // end if
