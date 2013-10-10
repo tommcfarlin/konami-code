@@ -22,28 +22,24 @@
 			$( window ).keyup(function( evt ) {
 
 				code = evt.keyCode ? evt.keyCode : evt.which;
-				controllerCode.push( code );
+				if ( 10 > controllerCode.push( code ) )
+				{
+					return;
+				}
 				
 				if ( 10 < controllerCode.length ) {
 					controllerCode.shift();
 				} // end if
 				
-				if( 10 === controllerCode.length ) {
-					
-					bIsValid = true;
-					for( i = 0, l = masterKey.length; i < l; i++ ) {
-					
-						if( masterKey[i] !== controllerCode[i] ) {
-							bIsValid = false;
-						} // end if
-						
-					} // end for
-					
-					if( bIsValid ) {
-						opts.cheat();
+				for( i = 0, l = masterKey.length; i < l; i++ ) {
+				
+					if( masterKey[i] !== controllerCode[i] ) {
+						return;
 					} // end if
-
-				} // end if
+					
+				} // end for
+				
+				opts.cheat();
 				
 			}); // keyup
 			
