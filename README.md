@@ -1,5 +1,5 @@
 # Konami Code For jQuery
-By [8BIT](http://8bit.io). Last Updated 28/02/2013.
+By [Tom McFarlin](http://tommcfarlin.com). Last Updated 11/10/2013.
 
 ## About
 
@@ -14,7 +14,7 @@ Using the Konami code, easily configure and Easter Egg for your page or any elem
 Include the plugin in the header of your page:
 
 ```
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>`
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>`
 	<script src="jquery.konami.js" type="text/javascript"></script>
 ```
 
@@ -34,8 +34,8 @@ Specify a callback to fire once the code has been entered:
 
 ## Contact
 
-* Web: [8BIT](http://8bit.io)
-* Twitter: [@8BIT](http://twitter.com/8BIT/)
+* Web: [Tom McFarlin](http://tommcfarlin.com)
+* Twitter: [@tommcfarlin](http://twitter.com/tommcfarlin/)
 
 ## License
 
