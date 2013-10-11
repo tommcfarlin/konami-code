@@ -1,12 +1,15 @@
-(function($) {
+(function( $ ) {
 	"use strict";
+
 	$(function() {
-	
-		$(window).konami({
+
+		$( window ).konami({
+
 			cheat: function() {
 				alert( 'Cheat code activated!' );
 			} // end cheat
+
 		});
-		
+
 	});
 }(jQuery));
