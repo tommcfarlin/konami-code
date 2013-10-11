@@ -154,7 +154,7 @@ var KONAMI = function ( options ) {
 	Example Usage:
 
 	var options = {
-		fn : function() {
+		cheat : function() {
 			alert( 'KONAMI!!' );
 		}
 	};
