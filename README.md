@@ -7,6 +7,7 @@ Using the Konami code, easily configure and Easter Egg for your page or any elem
 
 ## Parameters
 
+* `code` Personalized code.
 * `cheat` The callback function to fire once the cheat code has been entered.
 
 ## Instructions
