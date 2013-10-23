@@ -1,6 +1,6 @@
 /*
  * Konami Code For jQuery Plugin
- * 1.2.0, 11 October 2013
+ * 1.2.1, 23 October 2013
  *
  * Using the Konami code, easily configure and Easter Egg for your page or any element on the page.
  *
@@ -18,22 +18,21 @@
 
 		return this.each(function() {
 
-			masterKey = [38,38,40,40,37,39,37,39,66,65];
 			controllerCode = [];
 
 			$( window ).keyup(function( evt ) {
 
 				code = evt.keyCode || evt.which;
 
-				if ( 10 > controllerCode.push( code ) ) {
+				if ( opts.code.length > controllerCode.push( code ) ) {
 					return;
 				} // end if
 
-				if ( 10 < controllerCode.length ) {
+				if ( opts.code.length < controllerCode.length ) {
 					controllerCode.shift();
 				} // end if
 
-				if ( masterKey.toString() !== controllerCode.toString() ) {
+				if ( opts.code.toString() !== controllerCode.toString() ) {
 					return;
 				} // end for
 
@@ -46,6 +45,7 @@
 	}; // end opts
 
 	$.fn.konami.defaults = {
+		code : [38,38,40,40,37,39,37,39,66,65],
 		cheat: null
 	};
 

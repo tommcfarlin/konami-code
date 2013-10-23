@@ -32,6 +32,17 @@ Specify a callback to fire once the code has been entered:
 	});
 ```
 
+You can personalize the code too, just entering a array with ASCII codes keys in code param
+```
+  $( window ).konami({
+  		code : [38,38,40,40,37,39,37,39] // up up down down left left right right
+		cheat: function() {
+			alert( 'Cheat code activated!' );
+		}
+	});
+```
+
+
 ## Contact
 
 * Web: [Tom McFarlin](http://tommcfarlin.com)
