@@ -1,3 +1,7 @@
+_1.2.1 (23 October 2013)_
+
+* Added option to customize the code
+
 _1.2.0 (11 October 2013)_
 
 * Additional, minor refactoring for strong JSLint
