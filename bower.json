@@ -1,6 +1,6 @@
 {
   "name": "konami-code",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "homepage": "https://github.com/tommcfarlin/konami-code",
   "authors": [
     "(Tom McFarlin <tom@tommcfarlin.com>)"
@@ -17,5 +17,8 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
 }
