@@ -1,3 +1,7 @@
+_1.2.2 (6 March 2014)_
+
+* Added support for bower (bower.json)
+
 _1.2.1 (23 October 2013)_
 
 * Added option to customize the code

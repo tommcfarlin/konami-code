@@ -1,0 +1,24 @@
+{
+  "name": "konami-code",
+  "version": "1.2.2",
+  "homepage": "https://github.com/tommcfarlin/konami-code",
+  "authors": [
+    "(Tom McFarlin <tom@tommcfarlin.com>)"
+  ],
+  "description": "Using the Konami code, easily configure and Easter Egg for your page or any element on the page.",
+  "main": "./src/jquery.konami.min.js",
+  "keywords": [
+    "konami", "jquery", "js"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.9.0"
+  }
+}
