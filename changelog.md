@@ -1,3 +1,7 @@
+_1.3.0 (7 March 2014)_
+* Minor updates to the coding conventions and docblocks
+* Tagging for registration in the Bower repository
+
 _1.2.2 (6 March 2014)_
 
 * Added support for bower (bower.json)
@@ -12,7 +16,7 @@ _1.2.0 (11 October 2013)_
 * Removing extranneous whitespace
 * Moving the plugin to a `src` directory
 * Updated the demo to the latest version of jQuery
-* Updated the code for jQuery 
+* Updated the code for jQuery
 * Updated authorship information
 * Updated the version number in the plugin
 * Updated the README and the changelog
