@@ -1,5 +1,5 @@
 # Konami Code For jQuery
-By [Tom McFarlin](http://tommcfarlin.com). Last Updated 11/10/2013.
+By [Tom McFarlin](http://tommcfarlin.com). Last Updated 7 March 2014.
 
 ## About
 
@@ -26,7 +26,7 @@ Apply the plugin to the window to capture keypresses:
 Specify a callback to fire once the code has been entered:
 
 ```
-  $( window ).konami({	
+  $( window ).konami({
 		cheat: function() {
 			alert( 'Cheat code activated!' );
 		}
