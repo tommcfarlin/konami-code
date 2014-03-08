@@ -1,10 +1,10 @@
 /*
  * Konami Code For jQuery Plugin
- * 1.2.1, 23 October 2013
+ * 1.3.0, 7 March 2014
  *
  * Using the Konami code, easily configure and Easter Egg for your page or any element on the page.
  *
- * Copyright 2011 - 2013 Tom McFarlin, http://tommcfarlin.com
+ * Copyright 2011 - 2014 Tom McFarlin, http://tommcfarlin.com
  * Released under the MIT License
  */
 
@@ -49,4 +49,4 @@
 		cheat: null
 	};
 
-}(jQuery));
+}( jQuery ));

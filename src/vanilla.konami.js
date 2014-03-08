@@ -1,6 +1,6 @@
 /*
  * Konami Code Javascript Object
- * 1.0.0, 11 October 2013
+ * 1.3.0, 7 March 2014
  *
  * Using the Konami code, easily configure an Easter Egg for your page or any element on the page.
  *
@@ -9,7 +9,7 @@
  * - cheat : the function to call when the proper sequence is entered
  * - elem : the element to set the instance on
  *
- * Copyright 2013 Kurtis Kemple, http://kurtiskemple.com
+ * Copyright 2013 - 2014 Kurtis Kemple, http://kurtiskemple.com
  * Released under the MIT License
  */
 
@@ -75,10 +75,10 @@ var KONAMI = function ( options ) {
 		/**
 		 * handles adding events to elements
 		 *
-		 * @param  {elem}   elem DOM element to attach to
-		 * @param  {string}   evt  the event type to bind to
-		 * @param  {Function} fn   the function to bind
-		 * @return {none}
+		 * @param   {elem}     elem  DOM element to attach to
+		 * @param   {string}   evt   the event type to bind to
+		 * @param   {Function} fn    the function to bind
+		 * @return  {none}
 		 * @method  bind
 		 * @private
 		 */
@@ -97,10 +97,10 @@ var KONAMI = function ( options ) {
 		/**
 		 * handles removing events from elements
 		 *
-		 * @param  {elem}   elem DOM element to remove from
-		 * @param  {string}   evt  the event type to unbind
-		 * @param  {Function} fn   the function to unbind
-		 * @return {none}
+		 * @param   {elem}     elem DOM element to remove from
+		 * @param   {string}   evt  the event type to unbind
+		 * @param   {Function} fn   the function to unbind
+		 * @return  {none}
 		 * @method  unbind
 		 * @private
 		 */
@@ -119,8 +119,8 @@ var KONAMI = function ( options ) {
 		/**
 		 * handles the business logic for checking for valid konami code
 		 *
-		 * @param  {object} e the event object
-		 * @return {none}
+		 * @param   {object} e the event object
+		 * @return  {none}
 		 * @method  konami
 		 * @private
 		 */
