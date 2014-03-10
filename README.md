@@ -1,5 +1,5 @@
 # Konami Code For jQuery
-By [Tom McFarlin](http://tommcfarlin.com). Last Updated 7 March 2014.
+By [Tom McFarlin](http://tommcfarlin.com). Last Updated 10 March 2014.
 
 ## About
 
@@ -9,6 +9,11 @@ Using the Konami code, easily configure and Easter Egg for your page or any elem
 
 * `code` Personalized code.
 * `cheat` The callback function to fire once the cheat code has been entered.
+
+## Installation
+```
+bower install konami-code
+```
 
 ## Instructions
 
