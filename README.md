@@ -1,5 +1,5 @@
 # Konami Code For jQuery
-By [Tom McFarlin](http://tommcfarlin.com). Last Updated 10 March 2014.
+By [Tom McFarlin](http://tommcfarlin.com). Last Updated 11 November 2014.
 
 ## About
 
