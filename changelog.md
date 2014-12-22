@@ -1,4 +1,9 @@
+_1.3.1_
+
+* jQuery events supported
+
 _1.3.0 (7 March 2014)_
+
 * Minor updates to the coding conventions and docblocks
 * Tagging for registration in the Bower repository
 

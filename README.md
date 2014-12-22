@@ -9,6 +9,8 @@ Using the Konami code, easily configure and Easter Egg for your page or any elem
 
 * `code` Personalized code.
 * `cheat` The callback function to fire once the cheat code has been entered.
+* `eventName` jQuery event name for default callback
+* `eventProperties` event property override for default callback
 
 ## Installation
 ```
@@ -24,9 +26,17 @@ Include the plugin in the header of your page:
 	<script src="jquery.konami.js" type="text/javascript"></script>
 ```
 
-Apply the plugin to the window to capture keypresses:
+### With callback
 
-`$( window ).konami();`
+Apply the plugin to a selector to capture keypresses:
+
+```
+  $( window ).konami();
+```
+
+```
+  $( '.konami-sensitive' ).konami();
+```
 
 Specify a callback to fire once the code has been entered:
 
@@ -38,7 +48,40 @@ Specify a callback to fire once the code has been entered:
 	});
 ```
 
+### Using jQuery events
+
+Catch the konami code with a jQuery event handler:
+
+```
+  $( window ).konami();
+  $( window ).on('konami', function() {
+    alert( 'Cheat code activated!' );
+  })
+```
+
+Add extra data to the jQuery event callback:
+
+```
+  $( window ).konami( { message: 'special message' } );
+  $( window ).on('konami', function(evt, extraParam) {
+    alert( 'Cheat code activated: ' + extraParam.message + '!' );
+  })
+```
+
+Use event names:
+
+```
+  $('.type1').konami( { eventName: 'konami.on.type1' } );
+  $('.type2').konami( { eventName: 'konami.on.type2' } );
+  $( window ).on('konami.on.type2', function(evt, extraParam) {
+    alert( 'Cheat code activated on a type2 element' );
+  })
+```
+
+### Personallizing the code
+
 You can personalize the code too, just entering a array with ASCII codes keys in code param
+
 ```
   $( window ).konami({
   		code : [38,38,40,40,37,39,37,39], // up up down down left right left right
