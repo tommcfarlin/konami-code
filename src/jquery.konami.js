@@ -12,41 +12,43 @@
 	"use strict";
 
 	$.fn.konami = function( options ) {
-
-		var opts, masterKey, controllerCode, code;
+		var opts, controllerCode;
+		
 		opts = $.extend({}, $.fn.konami.defaults, options);
+		controllerCode = [];
+		
+		// note that we use the passed-in options, not the resolved options
+		opts.eventProperties = $.extend({}, options,  opts.eventProperties);
+		
+		this.keyup(function( evt ) {
+			var code = evt.keyCode || evt.which;
 
-		return this.each(function() {
+			if ( opts.code.length > controllerCode.push( code ) ) {
+				return;
+			} // end if
 
-			controllerCode = [];
+			if ( opts.code.length < controllerCode.length ) {
+				controllerCode.shift();
+			} // end if
 
-			$( window ).keyup(function( evt ) {
+			if ( opts.code.toString() !== controllerCode.toString() ) {
+				return;
+			} // end if
 
-				code = evt.keyCode || evt.which;
+			opts.cheat(evt, opts);
 
-				if ( opts.code.length > controllerCode.push( code ) ) {
-					return;
-				} // end if
-
-				if ( opts.code.length < controllerCode.length ) {
-					controllerCode.shift();
-				} // end if
-
-				if ( opts.code.toString() !== controllerCode.toString() ) {
-					return;
-				} // end for
-
-				opts.cheat();
-
-			}); // end keyup
-
-		}); // end each
-
+		}); // end keyup
+		
+		return this;
 	}; // end opts
 
 	$.fn.konami.defaults = {
 		code : [38,38,40,40,37,39,37,39,66,65],
-		cheat: null
+		eventName : 'konami',
+		eventProperties : null,
+		cheat: function(evt, opts) {
+			$(evt.target).trigger(opts.eventName, [ opts.eventProperties ]);
+		}
 	};
 
 }( jQuery ));

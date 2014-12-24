@@ -2,13 +2,30 @@
 <html>
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-		<script type="text/javascript" src="../src/jquery.konami.min.js"></script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../src/jquery.konami.js"></script>
 		<script type="text/javascript" src="demo.js"></script>
 		<title>Konami Code For jQuery | Demo</title>
 	</head>
 	<body>
 		<h1>Enter the Konami Code</h1>
-		<h2>[up up down down left right left right b a]
+		<h2>[up up down down left right left right b a]</h2>
+
+		Four konami code event handlers are attached to this window.
+		<ul>
+		<li>A global handler is attached to the window.</li>
+		<li>A handler is attached to input 1.</li>
+		<li>A handler is attached to input 2.</li>
+		<li>A handler is attached to odd-numbered inputs (1&3).</li>
+		</ul>
+		
+		When you enter the komami code while the caret is in input1, you should see three alerts.
+		
+		<form id="form1">
+			Input 1: <input type='text' id="input1" class="odd"/><br/>
+			Input 2: <input type='text' id="input2" class="even"/><br/>
+			Input 3: <input type='text' id="input3" class="odd"/><br/>
+		</form>
+		
 	</body>
 </html>
