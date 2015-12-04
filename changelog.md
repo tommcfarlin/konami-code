@@ -1,3 +1,8 @@
+_1.3.3_ (4 December 2015)
+
+* Updating README
+* Tagging for Bower support
+
 _1.3.1_
 
 * jQuery events supported

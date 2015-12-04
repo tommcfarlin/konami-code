@@ -1,12 +1,12 @@
 {
   "name": "konami-code",
-  "version": "1.3.0",
+  "version": "1.3.3",
   "homepage": "https://github.com/tommcfarlin/konami-code",
   "authors": [
     {
       "name": "Tom McFarlin",
       "email": "tom@tommcfarlin.com",
-      "homepage": "http://tommcfarlin.com"
+      "homepage": "https://tommcfarlin.com"
     }
   ],
   "description": "Using the Konami code, easily configure and Easter Egg for your page or any element on the page.",

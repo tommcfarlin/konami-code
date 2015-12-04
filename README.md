@@ -1,5 +1,5 @@
 # Konami Code For jQuery
-By [Tom McFarlin](http://tommcfarlin.com). Last Updated 11 November 2014.
+By [Tom McFarlin](https://tommcfarlin.com). Last Updated 4 December 2015.
 
 ## About
 
@@ -94,8 +94,8 @@ You can personalize the code too, just entering a array with ASCII codes keys in
 
 ## Contact
 
-* Web: [Tom McFarlin](http://tommcfarlin.com)
-* Twitter: [@tommcfarlin](http://twitter.com/tommcfarlin/)
+* Web: [Tom McFarlin](https://tommcfarlin.com)
+* Twitter: [@tommcfarlin](https://twitter.com/tommcfarlin/)
 
 ## License
 
